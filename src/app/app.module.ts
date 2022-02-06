@@ -7,6 +7,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { RouterModule } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LandingComponent } from './components/landing/landing.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(
       [
         { path: 'login', component: SigninComponent },
